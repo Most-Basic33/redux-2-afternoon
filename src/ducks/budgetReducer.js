@@ -10,11 +10,11 @@ const REQUEST_BUDGET_DATA = 'REQUEST_BUDGET_DATA',
     ADD_PURCHASE = 'ADD_PURCHASE',
     REMOVE_PURCHASE = 'REMOVE_PURCHASE'
 
-    export function addPurchase(price, description, category){
+    export function addPurchase( description, category,price){
         let data = axios.post(`/api/budget-data/purchase`,{
             description,
+            category,
             price,
-            category
         }).then(res=>res.data)
         return{
             type:ADD_PURCHASE,

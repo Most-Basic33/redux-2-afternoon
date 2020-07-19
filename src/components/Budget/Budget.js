@@ -33,7 +33,7 @@ const {firstName, lastName} = this.props.user
           <Nav firstName={firstName} lastName={lastName} />
           <div className='content-container'>
             <div className="purchases-container">
-              <AddPurchase addPurchase={this.props.AddPurchase} />
+              <AddPurchase addPurchase={this.props.addPurchase} />
               <DisplayPurchases purchases={purchases} removePurchase={this.props.removePurchase}/>
             </div>
             <div className='chart-container'>
