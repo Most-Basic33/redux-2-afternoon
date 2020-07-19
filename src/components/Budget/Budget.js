@@ -28,7 +28,7 @@ const {firstName, lastName} = this.props.user
 
     return (
       <Background>
-        {true ? <Loading /> : null}
+        {loading ? <Loading /> : null}
         <div className='budget-container'>
           <Nav firstName={firstName} lastName={lastName} />
           <div className='content-container'>

@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <HashRouter>
         <Switch>
-          <Route path='/' component={Login} exact />
+          <Route exact path='/' component={Login}   />
           <Route path='/my-budget' component={Budget} />
         </Switch>
       </HashRouter>
